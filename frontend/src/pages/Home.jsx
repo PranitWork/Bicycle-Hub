@@ -1,4 +1,6 @@
 import React from "react";
+import { Card } from "../components/Card";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -55,9 +57,9 @@ const Home = () => {
       </section>
 
       {/* section 2 */}
-      <section className="relative w-full h-[300px] min-h-screen bg-[#efefec] flex flex-col justify-center items-center px-4 md:px-10 overflow-hidden">
+      <section className="relative w-full  bg-[#efefec] flex flex-col justify-center items-center px-4 md:px-10 overflow-hidden">
         {/* Heading */}
-        <div className="absolute top-16 md:top-24 text-center px-4">
+        <div className="absolute top-16  md:top-24 text-center px-4">
           <h1 className="text-gray-400 text-2xl md:text-7xl  font-extrabold tracking-wider uppercase leading-tight">
             Ergonomic <br className="md:hidden" />
             Control At Hand
@@ -69,14 +71,14 @@ const Home = () => {
           <img
             src="/Images/Home_page/img-2.png" // Update this with your correct path
             alt="Ergo Handlebar Bike"
-            className="w-[90%]"
+            className="md:w-[50%] mt-40"
           />
         </div>
 
         {/* Bottom Left Description */}
       
 
-        <div className="absolute bottom-6 left-4 md:left-10 text-gray-800 text-xs md:text-sm max-w-[260px]">
+        <div className="hidden md:block absolute bottom-6 left-4 md:left-10 text-gray-800 text-xs md:text-sm max-w-[260px]">
           <p className="font-semibold uppercase mb-1">
             Your comfort and cycling <br className="hidden md:block" />{" "}
             experience is our priority
@@ -87,7 +89,7 @@ const Home = () => {
         </div>
 
         {/* Bottom Right Tag */}
-        <div className="absolute bottom-6 right-4 md:right-10 bg-white text-black p-2 md:p-3 rounded-md shadow-md flex items-center gap-2 md:gap-3">
+        <div className="hidden md:block absolute bottom-6 right-4 md:right-10 bg-white text-black p-2 md:p-3 rounded-md shadow-md flex items-center gap-2 md:gap-3">
           <img
             src="/Images/Home_page/white.png" // Replace with your icon/square preview
             alt="Bike Tag"
@@ -123,6 +125,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* products */}
+          <section className="text-center py-14 px-6 md:px-16">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">PRODUCTS LINEUP</h2>
+      <hr className="my-10" />
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <Card limit={4} />
+      </div>
+
+      <div className="mt-10">
+        <Link to="/products">
+          <button className="px-6 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">
+            View More Products
+          </button>
+        </Link>
+      </div>
+    </section>
       {/* section 4 */}
       <section className="relative w-full min-h-screen flex items-center justify-center bg-black overflow-hidden">
         {/* Background Image */}

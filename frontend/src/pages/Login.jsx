@@ -1,9 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { asyncCurrentUser, asyncSigninUser } from "../store/actions/userAction";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
+  const {register,reset, handleSubmit}= useForm();
+  const loginHandler = async (data)=>{
+    dispatch(asyncSigninUser(data));
+    const success = await dispatch(asyncCurrentUser());
+    if(success){
+      navigate("/");
+    }
+    reset();
+  }
   return (
     <div className="min-h-screen flex items-center justify-center bg-white font-sans">
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 shadow-xl rounded-xl overflow-hidden">
@@ -22,10 +36,11 @@ const Login = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-1">Welcome Back</h2>
           <p className="text-gray-500 mb-8">Login to your bicycle hub</p>
 
-          <form className="space-y-5">
+          <form onSubmit={handleSubmit(loginHandler)} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-gray-700">Email</label>
               <input
+              {...register("email")}
                 type="email"
                 placeholder="you@example.com"
                 className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
@@ -36,6 +51,7 @@ const Login = () => {
               <label className="block text-sm font-medium text-gray-700">Password</label>
               <div className="relative mt-1">
                 <input
+                {...register("password")}
                   type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"

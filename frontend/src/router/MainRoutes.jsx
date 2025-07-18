@@ -6,16 +6,18 @@ import About from '../pages/About';
 import Products from '../pages/Products';
 import SignUp from '../pages/SignUp';
 import Login from '../pages/Login';
+import Contact from '../pages/Contact';
 
 const MainRoutes = () => {
   return (
     <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/details/" element={<Details/>} />
-        <Route path="/about/" element={<About/>} />
-        <Route path="/products/" element={<Products/>} />
-        <Route path="/signup/" element={<SignUp/>} />
-        <Route path="/login/" element={<Login/>} />
+        <Route path="/details/:id" element={<Details/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/products" element={<Products/>} />
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/login" element={<Login/>} />
+         <Route path="/contact" element={<Contact/>} />
     </Routes>
   )
 }

@@ -37,6 +37,8 @@ const Header = () => {
           <li><NavLink to="/" className="text-white hover:text-gray-300 transition duration-300">Home</NavLink></li>
           <li><NavLink to="/products" className="text-white hover:text-gray-300 transition duration-300">bicycle</NavLink></li>
           <li><NavLink to="/about" className="text-white hover:text-gray-300 transition duration-300">About</NavLink></li>
+                    <li><NavLink to="/contact" className="text-white hover:text-gray-300 transition duration-300">Contact</NavLink></li>
+
           <li><NavLink to="/signup" className="text-white hover:text-gray-300 transition duration-300">Sign Up</NavLink></li>
         </ul>
 
@@ -80,6 +82,13 @@ const Header = () => {
             onClick={toggleMenu}
           >
             About
+          </NavLink>
+           <NavLink
+            to="/contact"
+            className="hover:text-gray-300 transition duration-300 delay-200"
+            onClick={toggleMenu}
+          >
+            Contact
           </NavLink>
           <NavLink
             to="/signup"

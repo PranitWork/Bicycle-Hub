@@ -1,8 +1,22 @@
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import {nanoid} from "@reduxjs/toolkit"
+import { useDispatch } from 'react-redux';
+import { asyncRegisterUser } from "../store/actions/userAction";
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const dispatch = useDispatch();
+  const navigate = useNavigate()
+  const {register, handleSubmit}= useForm();
+  const registerHandler=(data)=>{
+    data.id = nanoid();
+    localStorage.setItem("users", JSON.stringify(data));
+    dispatch(asyncRegisterUser(data));
+    navigate("/")
+  }
+
   return (
        <div className="min-h-screen flex items-center justify-center px-4 bg-white">
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 bg-white shadow-xl rounded-xl overflow-hidden">
@@ -26,11 +40,12 @@ const SignUp = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-1">Create Account</h2>
           <p className="text-gray-500 mb-8">Join the bicycle hub today</p>
 
-          <form className="space-y-5">
+          <form onSubmit={handleSubmit(registerHandler)} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-gray-700">Full Name</label>
               <input
                 type="text"
+                {...register("fullname")}
                 placeholder="John Doe"
                 className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
@@ -40,6 +55,7 @@ const SignUp = () => {
               <label className="block text-sm font-medium text-gray-700">Email</label>
               <input
                 type="email"
+                 {...register("email")}
                 placeholder="you@example.com"
                 className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
@@ -51,6 +67,7 @@ const SignUp = () => {
                 <input
                   type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
+                  {...register("password")}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
                 />
                 <span

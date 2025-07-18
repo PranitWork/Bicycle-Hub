@@ -1,12 +1,128 @@
 {
   "products": [
     {
-      "id": "1d9HZRJQp3ykiXxQZltce",
-      "name": "pranit",
-      "price": "pranit@gmail.com",
-      "description": "123",
-      "":""
+      "id": "1",
+      "title": "RoadMaster 300",
+      "price": "₹18,999",
+      "description": "The RoadMaster 300 is a high-performance road bike engineered for speed, agility, and endurance. Perfect for long-distance riders and urban commuters who demand quality and reliability on every ride.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?road-bike"
+      ],
+      "Specifications": "Lightweight alloy frame, 21-speed Shimano gear system for precise shifting, front and rear disc brakes for enhanced control, 700c high-traction road tires, and ergonomic drop handlebars for comfort and aerodynamics.",
+      "included": "Water bottle holder, adjustable kickstand, reflectors, chain guard, and a quick-release front wheel."
+    },
+    {
+      "id": "2",
+      "title": "TrailBlazer MTB X",
+      "price": "₹24,499",
+      "description": "The TrailBlazer MTB X is built for adventure seekers and mountain trail riders. With rugged components and shock-absorbing features, this bike conquers any terrain with confidence and control.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?mountain-bike"
+      ],
+      "Specifications": "26-inch alloy wheels, 18-speed gear set, front suspension fork with 100mm travel, mechanical disc brakes for powerful stopping, aggressive MTB tread pattern for grip, and reinforced steel frame.",
+      "included": "Mudguards, multitool kit, saddle pouch, spoke reflectors, and a durable side stand."
+    },
+    {
+      "id": "3",
+      "title": "CityCommuter Hybrid",
+      "price": "₹16,200",
+      "description": "A stylish and efficient hybrid bicycle that combines the comfort of a cruiser with the speed of a road bike. Ideal for daily office commutes, grocery runs, or leisurely weekend rides.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?hybrid-bike"
+      ],
+      "Specifications": "Hybrid alloy frame, 6-speed rear derailleur, upright handlebars, cushioned saddle with shock absorbers, 700x35c tires for smooth city rides, and V-brakes for reliable braking.",
+      "included": "Rear carrier rack, bell, headlight, ergonomic grips, and built-in mud flaps."
+    },
+    {
+      "id": "4",
+      "title": "Velocity BMX Pro",
+      "price": "₹13,750",
+      "description": "Designed for the daring, the Velocity BMX Pro is your go-to for freestyle stunts, park rides, and urban tricks. Reinforced with strong components for unmatched performance under pressure.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?bmx-bike"
+      ],
+      "Specifications": "20-inch high-tensile steel frame, reinforced one-piece crank, single-speed drivetrain, U-brakes with alloy levers, freestyle handlebar with 360° rotor for bar spins, and stunt pegs.",
+      "included": "2 pairs of pegs, rear reflector, padded crossbar, branded decals, and tire levers."
+    },
+    {
+      "id": "5",
+      "title": "EcoRide Unisex Gearless",
+      "price": "₹9,499",
+      "description": "A low-maintenance, eco-friendly gearless bicycle that delivers simplicity and style for riders of all ages. Ideal for morning rides, exercise, or casual rides around town.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?city-bike"
+      ],
+      "Specifications": "26-inch steel frame with step-through design, comfortable saddle with dual springs, wide handlebars, durable caliper brakes, and high-grip tires for stable riding.",
+      "included": "Front basket, rear-view mirror, chain cover, leg guard, side stand, and safety bell."
+    },
+    {
+      "id": "6",
+      "title": "UrbanFix Fixie",
+      "price": "₹12,300",
+      "description": "A modern single-speed fixie bike made for minimalists who love sleek, maintenance-free rides. Built to glide through urban streets with confidence and flair.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?fixie-bike"
+      ],
+      "Specifications": "Hi-ten steel frame, 700c tires with deep rims, flip-flop hub for fixed/free wheel mode, high-rise handlebar for better posture, and dual caliper brakes.",
+      "included": "Reflective tape kit, bottle cage, chain tensioner, toe clips, and branded seat wrap."
+    },
+    {
+      "id": "7",
+      "title": "Adventure Women’s 27.5",
+      "price": "₹19,999",
+      "description": "Crafted with female riders in mind, the Adventure Women’s 27.5 is a versatile MTB that delivers comfort, safety, and performance on every trail and terrain.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?women-mountain-bike"
+      ],
+      "Specifications": "27.5-inch lightweight aluminum frame, Zoom suspension fork, 21-speed thumb shifters, non-slip pedals, ergonomic women’s saddle, and knobby tires for grip.",
+      "included": "Seat cushion cover, hydration bottle, LED tail light, handlebar tassels, and toolkit."
+    },
+    {
+      "id": "8",
+      "title": "RaceX Carbon Pro",
+      "price": "₹49,990",
+      "description": "An elite-level carbon-frame racing bicycle built for speed, agility, and competition. Designed for cyclists who want nothing but the best from every component.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?carbon-bike"
+      ],
+      "Specifications": "Full carbon fiber frame and fork, 2x11 Shimano 105 drivetrain, hydraulic disc brakes, ultra-light aero wheels, integrated cable routing, and performance race saddle.",
+      "included": "Clipless pedals, carbon bottle cage, high-performance tires, mini pump, and Garmin-compatible mount."
+    },
+    {
+      "id": "9",
+      "title": "Kids Fun Ride 20T",
+      "price": "₹7,899",
+      "description": "A vibrant, sturdy, and safe bicycle specially made for kids aged 7 to 10. It promotes active play and independence in a fun and safe way.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?kids-bike"
+      ],
+      "Specifications": "20-inch steel frame, training wheels for stability, front basket, V-brakes, easy-grip handles, and anti-skid tires for safety on all surfaces.",
+      "included": "Colorful streamers, toy horn, padded handlebar, spoke beads, and removable training wheels."
+    },
+    {
+      "id": "10",
+      "title": "Electric Explorer E-Bike",
+      "price": "₹58,750",
+      "description": "A premium electric bicycle that offers pedal-assist and throttle modes, perfect for city commutes, long leisure rides, and eco-friendly travel with minimal effort.",
+      "image": [
+        "https://source.unsplash.com/featured/400x300?electric-bike"
+      ],
+      "Specifications": "250W brushless hub motor, 36V 10.4Ah lithium-ion battery, up to 50 km range, 7-speed Shimano gears, LED headlamp, and digital LCD dashboard.",
+      "included": "Fast charger, rear rack, helmet, USB charging port, theft alarm, and instruction manual."
     }
-   
+  ],
+  "users": [
+    {
+      "id": "dsdad",
+      "fullname": "pranit",
+      "email": "daphalepranit53@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "aY5dfMWuIlyWJnGl3aQv6",
+      "fullname": "pranit",
+      "email": "pranit@gmail.com",
+      "password": "123"
+    }
   ]
 }

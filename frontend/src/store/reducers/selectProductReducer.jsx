@@ -1,4 +1,4 @@
-// src/store/reducers/selectedFolderSlice.js
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
