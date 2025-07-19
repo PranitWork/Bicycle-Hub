@@ -7,6 +7,7 @@ import Products from '../pages/Products';
 import SignUp from '../pages/SignUp';
 import Login from '../pages/Login';
 import Contact from '../pages/Contact';
+import NotFoundPage from '../pages/NotFoundPage';
 
 const MainRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const MainRoutes = () => {
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
          <Route path="/contact" element={<Contact/>} />
+          <Route path="*" element={<NotFoundPage/>} />
     </Routes>
   )
 }
