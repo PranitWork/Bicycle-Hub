@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import ImageMagnifier from '../components/ImageMagnifier';
+import { addToCart } from '../store/actions/cartActions';
 
 const Details = () => {
   const { id } = useParams();
   const products = useSelector((state) => state.productReducer.Products);
-  const clickProduct = products.find((p) => p.id === id);
+  const dispatch = useDispatch();
 
+  const clickProduct = products.find((p) => p.id === id);
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = clickProduct?.image || [];
 
@@ -15,41 +17,32 @@ const Details = () => {
     return <div className="text-center mt-20 text-xl font-semibold">Product not found</div>;
   }
 
-  const prevImage = () => setCurrentIndex(prev => prev === 0 ? images.length - 1 : prev - 1);
-  const nextImage = () => setCurrentIndex(prev => prev === images.length - 1 ? 0 : prev + 1);
+  const prevImage = () => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const nextImage = () => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({
+      id: clickProduct.id,
+      title: clickProduct.title,
+      price: clickProduct.price,
+      image: clickProduct.image,
+      qty: 1
+    }));
+  };
 
   return (
     <div className="w-full min-h-screen bg-white text-black font-sans p-6">
       <div className="max-w-[1200px] mx-auto mt-30 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Image & Carousel */}
+        {/* Image Carousel */}
         <div className="w-full">
-          <div className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center">
-            <button
-              onClick={prevImage}
-              className="absolute left-0 top-1/2 text-4xl text-white z-10 pl-2 cursor-pointer   ansform -translate-y-1/2"
-            >
-              ←
-            </button>
-
+          <div className="relative w-full h-[500px] flex items-center justify-center">
+            <button onClick={prevImage} className="absolute left-0 top-1/2 text-4xl text-white z-10 pl-2 cursor-pointer transform -translate-y-1/2">←</button>
             <ImageMagnifier src={images[currentIndex]} zoom={2.5} />
-
-            <button
-              onClick={nextImage}
-              className="absolute right-0 top-1/2 text-4xl text-white z-10 pr-2 cursor-pointer transform -translate-y-1/2"
-            >
-              →
-            </button>
+            <button onClick={nextImage} className="absolute right-0 top-1/2 text-4xl text-white z-10 pr-2 cursor-pointer transform -translate-y-1/2">→</button>
           </div>
-
           <div className="flex justify-center mt-4 space-x-2">
             {images.map((_, index) => (
-              <div
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-                  index === currentIndex ? 'bg-black scale-110' : 'bg-gray-400'
-                }`}
-              ></div>
+              <div key={index} onClick={() => setCurrentIndex(index)} className={`w-3 h-3 rounded-full cursor-pointer transition-all ${index === currentIndex ? 'bg-black scale-110' : 'bg-gray-400'}`}></div>
             ))}
           </div>
         </div>
@@ -64,25 +57,20 @@ const Details = () => {
               <p className="text-xs font-bold uppercase mb-1">Size</p>
               <div className="flex space-x-2">
                 {['Kids', 'Adult', 'Women', 'Other'].map((size) => (
-                  <button
-                    key={size}
-                    className="px-3 py-1 border text-sm hover:bg-black hover:text-white"
-                  >
-                    {size}
-                  </button>
+                  <button key={size} className="px-3 py-1 border text-sm hover:bg-black hover:text-white">{size}</button>
                 ))}
               </div>
             </div>
 
             <div className="flex space-x-4 mt-20">
-              <button className="w-1/2 py-3 bg-black text-white font-semibold">Add to Cart</button>
+              <button onClick={handleAddToCart} className="w-1/2 py-3 bg-black text-white font-semibold">Add to Cart</button>
               <button className="w-1/2 py-3 border border-black font-semibold">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Description Section */}
+      {/* Description */}
       <div className="max-w-[1200px] mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-8">
           <div>
@@ -110,11 +98,7 @@ const Details = () => {
         </div>
 
         <div>
-          <img
-            src={clickProduct.partImg}
-            alt="Parts"
-            className="w-full object-cover rounded"
-          />
+          <img src={clickProduct.partImg} alt="Parts" className="w-full object-cover rounded" />
         </div>
       </div>
     </div>
