@@ -27,7 +27,7 @@ const SignUp = () => {
       transition={{ duration: 0.6 }}
     >
       <motion.div
-        className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 bg-white shadow-xl rounded-xl overflow-hidden"
+        className="w-full max-w-6xl grid grid-cols-1 mt-12 md:grid-cols-2 bg-white shadow-xl rounded-xl overflow-hidden"
         initial={{ y: 30 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

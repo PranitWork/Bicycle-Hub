@@ -72,7 +72,7 @@ const Home = () => {
         <img
           src="/Images/Home_page/Hero-bg.png"
           alt="Bike"
-          className="w-[90%] max-w-[900px] object-contain"
+          className="w-[90%] max-w-[700px] object-contain"
         />
       </motion.div>
 
@@ -388,12 +388,18 @@ const Home = () => {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <img
-          src="/Images/Home_page/gear.png"
-          alt="Gear Part"
-          className="w-[85%] max-w-[700px] object-contain"
-        />
+       <img
+  src="/Images/Home_page/gear.png"
+  alt="Gear Part"
+  className="w-[85%] max-w-[700px] object-contain animate-spin"
+/>
       </motion.div>
+    </section>
+    
+    <section className="w-full bg-[#1d1d1d] backdrop-blur-2xl text-white font-semibold text-[100px]">
+      <marquee behavior="smooth" direction="left">
+ • Premium Bicycles for Every Terrain • Road Bikes • Mountain Bikes • Urban Cruisers • Shop Now!
+</marquee>
     </section>
     </main>
   );

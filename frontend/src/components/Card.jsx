@@ -10,7 +10,7 @@ export const Card = ({ limit }) => {
       {displayedProducts.length ? (
         displayedProducts.map((p, index) => (
           <Link to={`/details/${p.id}`} key={index}>
-            <div className="text-left cursor-pointer">
+            <div className="text-left cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105">
               <div className="relative">
                
                 <img

@@ -3,13 +3,13 @@ import { Card } from '../components/Card'
 import { motion } from 'framer-motion'
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1 } },
+  visible: { opacity: 1,  transition: { duration: 1 } },
 };
 
 const Products = () => {
@@ -90,7 +90,7 @@ const Products = () => {
         className="text-center py-14 px-4 md:px-16"
         variants={fadeInUp}
       >
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">PRODUCTS LINEUP</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">BICYCLE'S</h2>
         <hr className="my-10" />
 
         {/* Products Grid */}
