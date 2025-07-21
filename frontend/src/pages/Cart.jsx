@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { applyCoupon, removeFromCart } from "../store/actions/cartActions";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { cartItems, discountAmount, coupon } = useSelector((state) => state.cart);
   const [couponCode, setCouponCode] = useState("");
 
@@ -22,10 +23,13 @@ const Cart = () => {
     dispatch(applyCoupon(couponCode, subtotal));
   };
 
+  const handleCheckout = () => {
+    navigate("/checkout");
+  };
+
   return (
     <div className="flex flex-col lg:flex-row gap-8 p-6 bg-[#f5f8fc] min-h-screen">
-
-   {/* Left Side - Shopping Bag */}
+      {/* Left Side - Shopping Bag */}
       <div className="flex-1 bg-white mt-20 rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-semibold mb-4">Shopping Bag</h2>
 
@@ -57,12 +61,13 @@ const Cart = () => {
                   <h2 className="text-xl font-semibold">{item.title}</h2>
                   <p className="text-gray-700">{item.price}</p>
                 </div>
-<button
-  onClick={() => dispatch(removeFromCart(item.id))}
-  className="mt-2 text-sm text-red-600 underline"
->
-  Remove
-</button>
+
+                <button
+                  onClick={() => dispatch(removeFromCart(item.id))}
+                  className="mt-2 text-sm text-red-600 underline"
+                >
+                  Remove
+                </button>
               </div>
             ))}
           </div>
@@ -71,12 +76,12 @@ const Cart = () => {
 
       {/* Right Side - Summary */}
       <div className="w-full mt-20 lg:w-[350px] space-y-6">
-        {/* Coupon */}
+        {/* Coupon Section */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="font-semibold mb-4">Coupon Code</h3>
           <input
             type="text"
-            placeholder="Enter Code (e.g. PRANIT10)"
+            placeholder="Enter Code (e.g. SHREYANSH50, PRANIT10)"
             className="w-full border rounded px-3 py-2 mb-4"
             value={couponCode}
             onChange={(e) => setCouponCode(e.target.value)}
@@ -90,7 +95,7 @@ const Cart = () => {
           {coupon && <p className="text-green-500 mt-2">Applied: {coupon}</p>}
         </div>
 
-        {/* Cart Total */}
+        {/* Total Summary */}
         <div className="bg-orange-100 p-6 rounded-lg shadow-md">
           <h3 className="font-semibold mb-4">Cart Total</h3>
           <div className="flex justify-between text-sm mb-2">
@@ -106,7 +111,10 @@ const Cart = () => {
             <p>Total</p>
             <p>₹{total.toFixed(2)}</p>
           </div>
-          <button className="w-full bg-black text-white py-2 rounded">
+          <button
+            onClick={handleCheckout}
+            className="w-full bg-black text-white py-2 rounded"
+          >
             Checkout
           </button>
         </div>

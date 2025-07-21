@@ -15,6 +15,8 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const cartItems = useSelector((state) => state.cart.cartItems);
 
+  const totalCartItems = cartItems.reduce((total, item) => total + item.qty, 0);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 100);
@@ -77,7 +79,6 @@ const Header = () => {
         >
           <Link to="/">Bicycle Hub</Link>
         </motion.h1>
-       
 
         {/* Animated Desktop Nav */}
         <motion.ul
@@ -98,7 +99,7 @@ const Header = () => {
               to="/products"
               className="text-white font-semibold hover:text-gray-300 transition duration-300"
             >
-              bicycle
+              Bicycle
             </NavLink>
           </li>
           <li>
@@ -118,10 +119,19 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-             {/* cart */}
-        <div className="relative">
-          <NavLink to="/cart" className="text-green-500 font-semibold hover:text-gray-300 transition duration-300"> Cart</NavLink>
-        </div>
+            <div className="relative">
+              <NavLink
+                to="/cart"
+                className="text-green-500 font-semibold hover:text-gray-300 transition duration-300"
+              >
+                <FiShoppingCart className="text-xl" />
+              </NavLink>
+              {totalCartItems > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                  {totalCartItems}
+                </span>
+              )}
+            </div>
           </li>
           <li>
             <NavLink
@@ -133,10 +143,21 @@ const Header = () => {
           </li>
         </motion.ul>
 
- {/* cart */}
-      
-          <NavLink to="/cart" className="text-green-500 md:hidden font-semibold hover:text-gray-300 transition duration-300"> Cart</NavLink>
-        
+        {/* Cart Icon (Mobile) */}
+        <div className="relative md:hidden">
+          <NavLink
+            to="/cart"
+            className="text-green-500 font-semibold hover:text-gray-300 transition duration-300"
+          >
+            <FiShoppingCart className="text-xl" />
+          </NavLink>
+          {totalCartItems > 0 && (
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+              {totalCartItems}
+            </span>
+          )}
+        </div>
+
         {/* Animated Mobile Icon */}
         <motion.div
           className="md:hidden text-white text-2xl cursor-pointer transition duration-300"
@@ -146,7 +167,6 @@ const Header = () => {
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </motion.div>
-
 
         {/* Mobile Overlay */}
         {isOpen && (
@@ -162,7 +182,6 @@ const Header = () => {
             isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           } transition-all duration-500 ease-in-out p-8 flex flex-col gap-6 z-[999]`}
         >
-            
           <button className="self-end text-3xl" onClick={toggleMenu}>
             <FiX />
           </button>
@@ -178,7 +197,7 @@ const Header = () => {
             onClick={toggleMenu}
             className="hover:text-gray-300 font-semibold transition duration-300"
           >
-            bicycle
+            Bicycle
           </NavLink>
           <NavLink
             to="/about"
@@ -194,9 +213,6 @@ const Header = () => {
           >
             Contact
           </NavLink>
-          
-          
-          
           <NavLink
             to="/signup"
             onClick={toggleMenu}

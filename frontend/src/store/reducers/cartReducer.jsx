@@ -2,6 +2,7 @@ const initialState = {
   cartItems: [],
   coupon: null,
   discountAmount: 0,
+   buyNowItem: null,
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -35,6 +36,13 @@ const cartReducer = (state = initialState, action) => {
         coupon: action.payload.code,
         discountAmount: action.payload.amount,
       };
+    case 'BUY_NOW':
+  return {
+    ...state,
+    cartItems: [action.payload],
+    coupon: null,
+    discountAmount: 0,
+  };
 
     default:
       return state;

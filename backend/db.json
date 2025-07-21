@@ -1,169 +1,160 @@
 {
   "products": [
-  {
-    "id": "1",
-    "title": "RoadMaster 300",
-    "price": "₹18,999",
-    "description": "The RoadMaster 300 is a high-performance road bike engineered for speed, agility, and endurance. Perfect for long-distance riders and urban commuters who demand quality and reliability on every ride.",
-    "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "Lightweight alloy frame, 21-speed Shimano gear system for precise shifting, front and rear disc brakes for enhanced control, 700c high-traction road tires, and ergonomic drop handlebars for comfort and aerodynamics.",
-    "included": "Water bottle holder, adjustable kickstand, reflectors, chain guard, and a quick-release front wheel."
-  },
-  {
-    "id": "2",
-    "title": "TrailBlazer MTB X",
-    "price": "₹24,499",
-    "description": "The TrailBlazer MTB X is built for adventure seekers and mountain trail riders. With rugged components and shock-absorbing features, this bike conquers any terrain with confidence and control.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "26-inch alloy wheels, 18-speed gear set, front suspension fork with 100mm travel, mechanical disc brakes for powerful stopping, aggressive MTB tread pattern for grip, and reinforced steel frame.",
-    "included": "Mudguards, multitool kit, saddle pouch, spoke reflectors, and a durable side stand."
-  },
-  {
-    "id": "3",
-    "title": "CityCommuter Hybrid",
-    "price": "₹16,200",
-    "description": "A stylish and efficient hybrid bicycle that combines the comfort of a cruiser with the speed of a road bike. Ideal for daily office commutes, grocery runs, or leisurely weekend rides.",
-       "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "Hybrid alloy frame, 6-speed rear derailleur, upright handlebars, cushioned saddle with shock absorbers, 700x35c tires for smooth city rides, and V-brakes for reliable braking.",
-    "included": "Rear carrier rack, bell, headlight, ergonomic grips, and built-in mud flaps."
-  },
-  {
-    "id": "4",
-    "title": "Velocity BMX Pro",
-    "price": "₹13,750",
-    "description": "Designed for the daring, the Velocity BMX Pro is your go-to for freestyle stunts, park rides, and urban tricks. Reinforced with strong components for unmatched performance under pressure.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "20-inch high-tensile steel frame, reinforced one-piece crank, single-speed drivetrain, U-brakes with alloy levers, freestyle handlebar with 360° rotor for bar spins, and stunt pegs.",
-    "included": "2 pairs of pegs, rear reflector, padded crossbar, branded decals, and tire levers."
-  },
-  {
-    "id": "5",
-    "title": "EcoRide Unisex Gearless",
-    "price": "₹9,499",
-    "description": "A low-maintenance, eco-friendly gearless bicycle that delivers simplicity and style for riders of all ages. Ideal for morning rides, exercise, or casual rides around town.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "26-inch steel frame with step-through design, comfortable saddle with dual springs, wide handlebars, durable caliper brakes, and high-grip tires for stable riding.",
-    "included": "Front basket, rear-view mirror, chain cover, leg guard, side stand, and safety bell."
-  },
-  {
-    "id": "6",
-    "title": "UrbanFix Fixie",
-    "price": "₹12,300",
-    "description": "A modern single-speed fixie bike made for minimalists who love sleek, maintenance-free rides. Built to glide through urban streets with confidence and flair.",
-       "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "Hi-ten steel frame, 700c tires with deep rims, flip-flop hub for fixed/free wheel mode, high-rise handlebar for better posture, and dual caliper brakes.",
-    "included": "Reflective tape kit, bottle cage, chain tensioner, toe clips, and branded seat wrap."
-  },
-  {
-    "id": "7",
-    "title": "Adventure Women’s 27.5",
-    "price": "₹19,999",
-    "description": "Crafted with female riders in mind, the Adventure Women’s 27.5 is a versatile MTB that delivers comfort, safety, and performance on every trail and terrain.",
-      "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "27.5-inch lightweight aluminum frame, Zoom suspension fork, 21-speed thumb shifters, non-slip pedals, ergonomic women’s saddle, and knobby tires for grip.",
-    "included": "Seat cushion cover, hydration bottle, LED tail light, handlebar tassels, and toolkit."
-  },
-  {
-    "id": "8",
-    "title": "RaceX Carbon Pro",
-    "price": "₹49,990",
-    "description": "An elite-level carbon-frame racing bicycle built for speed, agility, and competition. Designed for cyclists who want nothing but the best from every component.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "Full carbon fiber frame and fork, 2x11 Shimano 105 drivetrain, hydraulic disc brakes, ultra-light aero wheels, integrated cable routing, and performance race saddle.",
-    "included": "Clipless pedals, carbon bottle cage, high-performance tires, mini pump, and Garmin-compatible mount."
-  },
-  {
-    "id": "9",
-    "title": "Kids Fun Ride 20T",
-    "price": "₹7,899",
-    "description": "A vibrant, sturdy, and safe bicycle specially made for kids aged 7 to 10. It promotes active play and independence in a fun and safe way.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "20-inch steel frame, training wheels for stability, front basket, V-brakes, easy-grip handles, and anti-skid tires for safety on all surfaces.",
-    "included": "Colorful streamers, toy horn, padded handlebar, spoke beads, and removable training wheels."
-  },
-  {
-    "id": "10",
-    "title": "Electric Explorer E-Bike",
-    "price": "₹58,750",
-    "description": "A premium electric bicycle that offers pedal-assist and throttle modes, perfect for city commutes, long leisure rides, and eco-friendly travel with minimal effort.",
-        "image": [
-      "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
-    ],
-    "partImg": "https://images.unsplash.com/photo-1496147539180-13929f8aa03a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJpY3ljbGV8ZW58MHx8MHx8fDA%3D",
-    "Specifications": "250W brushless hub motor, 36V 10.4Ah lithium-ion battery, up to 50 km range, 7-speed Shimano gears, LED headlamp, and digital LCD dashboard.",
-    "included": "Fast charger, rear rack, helmet, USB charging port, theft alarm, and instruction manual."
-  }
-],
-
-  "users": [
     {
-      "id": "dsdad",
-      "fullname": "pranit",
-      "email": "daphalepranit53@gmail.com",
-      "password": "123"
+      "id": "1",
+      "title": "RoadMaster 300",
+      "price": "₹18,999",
+      "description": "The RoadMaster 300 is a high-performance road bike engineered for speed, agility, and endurance. Perfect for long-distance riders and urban commuters who demand quality and reliability on every ride.",
+      "image": [
+        "https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/b0gdpu306OIr0-iAsl6C3PwxYWtau3gD_Mf1LQ48YBI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzhlL2Yx/LzZkLzhlZjE2ZGI0/Mzk5YjJkODUyMDZk/ZDBjMjRmMTU1MGI2/LmpwZw",
+      "Specifications": "Lightweight alloy frame, 21-speed Shimano gear system for precise shifting, front and rear disc brakes for enhanced control, 700c high-traction road tires, and ergonomic drop handlebars for comfort and aerodynamics.",
+      "included": "Water bottle holder, adjustable kickstand, reflectors, chain guard, and a quick-release front wheel."
     },
     {
-      "id": "aY5dfMWuIlyWJnGl3aQv6",
-      "fullname": "pranit",
-      "email": "pranit@gmail.com",
-      "password": "123"
+      "id": "2",
+      "title": "TrailBlazer MTB X",
+      "price": "₹24,499",
+      "description": "The TrailBlazer MTB X is built for adventure seekers and mountain trail riders. With rugged components and shock-absorbing features, this bike conquers any terrain with confidence and control.",
+      "image": [
+        "https://imgs.search.brave.com/kSVhk4tR4ucgFM_PkFgfc_58CQHkJ4MrGI3G0qRZxo4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxNkE2ZDg0V0JM/LmpwZw",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/nAJ67L0APQtL7jJtwIkGVfYhpNgM-g-vGq7iZxG_P58/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzcwLzY1LzU1/LzM2MF9GXzI3MDY1/NTU4NV93UzhBQjUx/VFRWOGpjWUs3dlJQ/MkxJWk9SN2lvT0lw/Qi5qcGc",
+      "Specifications": "26-inch alloy wheels, 18-speed gear set, front suspension fork with 100mm travel, mechanical disc brakes for powerful stopping, aggressive MTB tread pattern for grip, and reinforced steel frame.",
+      "included": "Mudguards, multitool kit, saddle pouch, spoke reflectors, and a durable side stand."
+    },
+    {
+      "id": "3",
+      "title": "CityCommuter Hybrid",
+      "price": "₹16,200",
+      "description": "A stylish and efficient hybrid bicycle that combines the comfort of a cruiser with the speed of a road bike. Ideal for daily office commutes, grocery runs, or leisurely weekend rides.",
+      "image": [
+        "https://imgs.search.brave.com/0LhJOoB1KAsIBMYpyqMvtjNfp5IAAZ85OoPIdpOCR3s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxcGwyM0VZYnpM/LmpwZw",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/5JgzWOs5eIdW9trKeuZRWK0bYLfJKw_Nl6YFijaSK-o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9iaWN5Y2xlLXBh/cnRzLXJlcGFpci10/b29scy13aGl0ZS1i/YWNrZ3JvdW5kXzM5/Mjg5NS00ODk5MDcu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MA",
+      "Specifications": "Hybrid alloy frame, 6-speed rear derailleur, upright handlebars, cushioned saddle with shock absorbers, 700x35c tires for smooth city rides, and V-brakes for reliable braking.",
+      "included": "Rear carrier rack, bell, headlight, ergonomic grips, and built-in mud flaps."
+    },
+    {
+      "id": "4",
+      "title": "Velocity BMX Pro",
+      "price": "₹13,750",
+      "description": "Designed for the daring, the Velocity BMX Pro is your go-to for freestyle stunts, park rides, and urban tricks. Reinforced with strong components for unmatched performance under pressure.",
+      "image": [
+        "https://imgs.search.brave.com/qhyxHErDi2Kz_MzQ9rxqAU6ZxGfmChvEcGKEjRwTjhs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iaWtl/cy5jb20vY2RuL3No/b3AvYXJ0aWNsZXMv/REkuQTIwMjVfUm9j/a3lfTW91bnRhaW5f/SW5zdGluY3RfUG93/ZXJwbGF5X1NMX2Iy/YTYxODRhLTAzYjYt/NDViMy1hMjNhLWUx/N2NiNDA1YTA0ZS5q/cGc_dj0xNzM3NTc1/NzQ2JndpZHRoPTE5/MjA",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/1y7qk3_l07tKMaQ7KAYjghVV0WCaI37VuNFFXdNhiWk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/YmljeWNsZS1wYXJ0/cy1zZXQtaXNvbGF0/ZWQtbW9ub2Nocm9t/YXRpYy1pbWFnZXMt/d2l0aC1iaWtlLWVs/ZW1lbnRzLWhhbmQt/YXNzZW1ibGluZy1i/bGFuay1iYWNrZ3Jv/dW5kLXZlY3Rvci1p/bGx1c3RyYXRpb25f/MTI4NC02ODg1NS5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw",
+      "Specifications": "20-inch high-tensile steel frame, reinforced one-piece crank, single-speed drivetrain, U-brakes with alloy levers, freestyle handlebar with 360° rotor for bar spins, and stunt pegs.",
+      "included": "2 pairs of pegs, rear reflector, padded crossbar, branded decals, and tire levers."
+    },
+    {
+      "id": "5",
+      "title": "EcoRide Unisex Gearless",
+      "price": "₹9,499",
+      "description": "A low-maintenance, eco-friendly gearless bicycle that delivers simplicity and style for riders of all ages. Ideal for morning rides, exercise, or casual rides around town.",
+      "image": [
+        "https://imgs.search.brave.com/P_T1Fuqwbei_5EAI-49Wd8VQ-N2e7ksmStsCaF0yj-s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxbVluc0tUUy1M/LmpwZw",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/Ea2AWhikmJxwoh8nVDTpHjk69X7GVRt4iMP3QVZB4qg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvYmljeWNsZS1w/YXJ0cy12aW50YWdl/LWN5Y2xlLXBhcnRz/LXVuaXF1ZS1pY29u/LXdpdGgtc2lsdmVy/LWJhY2tncm91bmQt/dmVjdG9yLWlsbHVz/dHJhdGlvbl85ODE1/MzYtNTYwLmpwZz9z/ZW10PWFpc19oeWJy/aWQmdz03NDA",
+      "Specifications": "26-inch steel frame with step-through design, comfortable saddle with dual springs, wide handlebars, durable caliper brakes, and high-grip tires for stable riding.",
+      "included": "Front basket, rear-view mirror, chain cover, leg guard, side stand, and safety bell."
+    },
+    {
+      "id": "6",
+      "title": "UrbanFix Fixie",
+      "price": "₹12,300",
+      "description": "A modern single-speed fixie bike made for minimalists who love sleek, maintenance-free rides. Built to glide through urban streets with confidence and flair.",
+      "image": [
+        "https://imgs.search.brave.com/Sn5lIxfHADBxftVGeX6adGC9uOlAOAB8C-RXQlS2BPw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/dHAyLm1venUuY29t/LzExOTYxLTE2NDkz/L2Ntcy8xNjQ5My9m/aWxlcy9hNzM4YmUx/Mi0xODg4LTQyYTYt/ODRjNi1hMWEzY2Q5/MzNlY2I_cXVhbGl0/eT02MCZtYXg9MjYw/Jl9temNiPV8xNzUy/MjUzNDMyMjA5",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/rZZEPWDPwlufV3Ev6ix1Z_fZcvwfF_tOAlrdZQPgIIQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9iaWN5Y2xlLXBh/cnRzLXJlcGFpci10/b29scy1ncmF5LWJh/Y2tncm91bmRfMzky/ODk1LTQ1NzIzNy5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw",
+      "Specifications": "Hi-ten steel frame, 700c tires with deep rims, flip-flop hub for fixed/free wheel mode, high-rise handlebar for better posture, and dual caliper brakes.",
+      "included": "Reflective tape kit, bottle cage, chain tensioner, toe clips, and branded seat wrap."
+    },
+    {
+      "id": "7",
+      "title": "Adventure Women’s 27.5",
+      "price": "₹19,999",
+      "description": "Crafted with female riders in mind, the Adventure Women’s 27.5 is a versatile MTB that delivers comfort, safety, and performance on every trail and terrain.",
+      "image": [
+        "https://imgs.search.brave.com/vADBHCmylSiZb3U9nNxSO8jcjYuu9Ny3K-gue_SNj5s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2FudGFjcnV6Ymlj/eWNsZXMuY29tL2Nk/bi9zaG9wL2ZpbGVz/L01ZMjZfQnVsbGl0/X0NDX1gwX0FYU19S/U1ZfR2xvc3NCbGFj/a183Mzc4MmE1Zi01/MGVjLTQ3OTctOGZm/NS01YWE0M2FkM2E0/YjMucG5nP3Y9MTc1/MTk4ODA1MSZ3aWR0/aD04NzU",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/aR-Xg2lkQA3UwqgiGBznaTGZBmU0CL5XZVGNh0I5m40/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODc2/NDUzNTMyL3Bob3Rv/L3ZpbnRhZ2UtYmlj/eWNsZS1wYXJ0cy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/QWI0c0hlLVN3bFJO/S2tVbmFXc2JJakpu/UG1pZUZ5YU91MGlZ/UWhNWGxmND0",
+      "Specifications": "27.5-inch lightweight aluminum frame, Zoom suspension fork, 21-speed thumb shifters, non-slip pedals, ergonomic women’s saddle, and knobby tires for grip.",
+      "included": "Seat cushion cover, hydration bottle, LED tail light, handlebar tassels, and toolkit."
+    },
+    {
+      "id": "8",
+      "title": "RaceX Carbon Pro",
+      "price": "₹49,990",
+      "description": "An elite-level carbon-frame racing bicycle built for speed, agility, and competition. Designed for cyclists who want nothing but the best from every component.",
+      "image": [
+        "https://imgs.search.brave.com/z-CJ_l-0n6oDjEdgCQCbKw74te2NyBx8Y7Y0QjXX5kE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxZlhBUjNabnZM/LmpwZw",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/PkJ2eyfoZCrqBhfZMn9xUMPoOJoIuhJ1sTqJiKabGKE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzkxLzMwLzU4/LzM2MF9GXzg5MTMw/NTgyM19vREFzeGVk/czB1T2hzYzZncU9r/N2xNTlBNdGw4WWJk/RC5qcGc",
+      "Specifications": "Full carbon fiber frame and fork, 2x11 Shimano 105 drivetrain, hydraulic disc brakes, ultra-light aero wheels, integrated cable routing, and performance race saddle.",
+      "included": "Clipless pedals, carbon bottle cage, high-performance tires, mini pump, and Garmin-compatible mount."
+    },
+    {
+      "id": "9",
+      "title": "Kids Fun Ride 20T",
+      "price": "₹7,899",
+      "description": "A vibrant, sturdy, and safe bicycle specially made for kids aged 7 to 10. It promotes active play and independence in a fun and safe way.",
+      "image": [
+        "https://imgs.search.brave.com/YlqJNziJj1VLNIC_JNIqLkRLji_6QKUacIUbLGjAMoU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxaGUrUVhHbmRM/LmpwZw",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/zykrL_Hs_KN36Gz3Mr3iRfBB0JvLWatyLkR_Z-vX2gI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9hbGwtc2lu/Z2xlLXBhcnRzLWNv/bXBvbmVudHMteWVs/bG93LTI2MG53LTE1/MTExMTk2OTQuanBn",
+      "Specifications": "20-inch steel frame, training wheels for stability, front basket, V-brakes, easy-grip handles, and anti-skid tires for safety on all surfaces.",
+      "included": "Colorful streamers, toy horn, padded handlebar, spoke beads, and removable training wheels."
+    },
+    {
+      "id": "10",
+      "title": "Electric Explorer E-Bike",
+      "price": "₹58,750",
+      "description": "A premium electric bicycle that offers pedal-assist and throttle modes, perfect for city commutes, long leisure rides, and eco-friendly travel with minimal effort.",
+      "image": [
+        "https://imgs.search.brave.com/XpkuNtqP2DWoHPYUO04yqB7P6h8i3cokL_D0NA5tV8Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/dHAyLm1venUuY29t/LzExOTYxLTE2NDkz/L2Ntcy8xNjQ5My9m/aWxlcy9mMGE4NWYz/YS1mZGE5LTRmMjEt/OWFjMC1lYmU2YzI0/YTRmYjQ_cXVhbGl0/eT02MCZtYXg9MjYw/Jl9temNiPV8xNzUy/MjUzNDMyMjA5",
+        "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D"
+      ],
+      "partImg": "https://imgs.search.brave.com/z6l8rpP5H63v5PkaIvEcrTew4kcoNfzwVdn_ZxDmI3o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzAzLzk2LzIw/LzM2MF9GXzYwMzk2/MjAxM19RQ1hMOGd1/c2Y3S0JuOFltblpZ/eWRYUmYwdWtCcHZS/Vy5qcGc",
+      "Specifications": "250W brushless hub motor, 36V 10.4Ah lithium-ion battery, up to 50 km range, 7-speed Shimano gears, LED headlamp, and digital LCD dashboard.",
+      "included": "Fast charger, rear rack, helmet, USB charging port, theft alarm, and instruction manual."
     }
+  ],
+  "users": [
+   
+  ],
+  "buyer": [
+  
   ]
 }

@@ -9,6 +9,7 @@ export const asyncCurrentUser = () => async (dispatch) => {
     if (user) {
       dispatch(loadusers(user));
     }
+    return true
   } catch (err) {
     console.log("Error loading user:", err);
   }
@@ -18,7 +19,7 @@ export const asyncCurrentUser = () => async (dispatch) => {
 export const asyncRegisterUser = (data) => async (dispatch) => {
   try {
     const response = await axios.post("/users", data);
-    console.log("User registered:", response.data);
+
     localStorage.setItem("users", JSON.stringify(response.data));
     dispatch(asyncCurrentUser());
   } catch (err) {
@@ -35,7 +36,7 @@ export const asyncSigninUser = (credentials) => async (dispatch) => {
     );
 
     if (data[0]) {
-      console.log("User logged in!");
+  
       localStorage.setItem("users", JSON.stringify(data[0]));
       dispatch(asyncCurrentUser());
       return true

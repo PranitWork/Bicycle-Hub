@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import PreLoader from "../components/preLoader/PreLoader";
 
 
+
 // Lazy load all pages
 const Home = lazy(() => import("../pages/Home"));
 const Details = lazy(() => import("../pages/Details"));
@@ -13,6 +14,7 @@ const Login = lazy(() => import("../pages/Login"));
 const Contact = lazy(() => import("../pages/Contact"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 const Cart = lazy(() => import("../pages/Cart"));
+const Checkout = lazy(()=> import("../pages/Checkout"))
 
 const MainRoutes = () => {
   return (
@@ -26,6 +28,7 @@ const MainRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout/>} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>

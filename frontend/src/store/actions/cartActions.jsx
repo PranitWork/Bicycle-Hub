@@ -46,3 +46,17 @@ export const removeFromCart = (id) => {
     payload: id,
   };
 };
+
+
+export const buyNow = (product) => {
+  return {
+    type: "BUY_NOW",
+    payload: product,
+  };
+};
+export const cartAction = (product) => {
+  return {
+    type: "BUY_NOW",
+    payload: product,
+  };
+};

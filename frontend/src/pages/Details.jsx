@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import ImageMagnifier from '../components/ImageMagnifier';
-import { addToCart } from '../store/actions/cartActions';
+import { addToCart, buyNow } from '../store/actions/cartActions';
 
 const Details = () => {
   const { id } = useParams();
@@ -29,6 +29,18 @@ const Details = () => {
       qty: 1
     }));
   };
+  const navigate = useNavigate();
+
+const handleBuyNow = () => {
+  dispatch(buyNow({
+    id: clickProduct.id,
+    title: clickProduct.title,
+    price: clickProduct.price,
+    image: clickProduct.image,
+    qty: 1
+  }));
+  navigate('/checkout');
+};
 
   return (
     <div className="w-full min-h-screen bg-white text-black font-sans p-6">
@@ -36,9 +48,9 @@ const Details = () => {
         {/* Image Carousel */}
         <div className="w-full">
           <div className="relative w-full h-[500px] flex items-center justify-center">
-            <button onClick={prevImage} className="absolute left-0 top-1/2 text-4xl text-white z-10 pl-2 cursor-pointer transform -translate-y-1/2">←</button>
+            <button onClick={prevImage} className="absolute left-0 top-1/2 text-4xl text-shadow-sm  text-white z-10 p-2 ml-2 cursor-pointer transform -translate-y-1/2">←</button>
             <ImageMagnifier src={images[currentIndex]} zoom={2.5} />
-            <button onClick={nextImage} className="absolute right-0 top-1/2 text-4xl text-white z-10 pr-2 cursor-pointer transform -translate-y-1/2">→</button>
+            <button onClick={nextImage} className="absolute right-0 top-1/2 text-4xl text-shadow-sm text-white z-10 p-2 mr-2 cursor-pointer transform -translate-y-1/2">→</button>
           </div>
           <div className="flex justify-center mt-4 space-x-2">
             {images.map((_, index) => (
@@ -64,7 +76,7 @@ const Details = () => {
 
             <div className="flex space-x-4 mt-20">
               <button onClick={handleAddToCart} className="w-1/2 py-3 bg-black text-white font-semibold">Add to Cart</button>
-              <button className="w-1/2 py-3 border border-black font-semibold">Buy Now</button>
+              <button onClick={handleBuyNow} className="w-1/2 py-3 border border-black font-semibold">Buy Now</button>
             </div>
           </div>
         </div>

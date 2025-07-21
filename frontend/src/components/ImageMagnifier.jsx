@@ -12,11 +12,22 @@ const ImageMagnifier = ({ src, zoom = 2.5 }) => {
     const backgroundX = (x / width) * 100;
     const backgroundY = (y / height) * 100;
 
+    // Prevent magnifier from overflowing image bounds
+    const magnifierSize = 200; // Set smaller for responsiveness
+    let posX = x + 20;
+    let posY = y - magnifierSize / 2;
+
+    // Shift left if going out of right bound
+    if (posX + magnifierSize > width) posX = x - magnifierSize - 20;
+    if (posX < 0) posX = 0;
+    if (posY < 0) posY = 0;
+    if (posY + magnifierSize > height) posY = height - magnifierSize;
+
     setMagnifierStyle({
-      top: `${y - 75}px`,
-      left: `${x + 25}px`,
-      width: '350px',
-      height: '350px',
+      top: `${posY}px`,
+      left: `${posX}px`,
+      width: `${magnifierSize}px`,
+      height: `${magnifierSize}px`,
       backgroundImage: `url(${src})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: `${width * zoom}px ${height * zoom}px`,
@@ -26,7 +37,7 @@ const ImageMagnifier = ({ src, zoom = 2.5 }) => {
 
   return (
     <div
-      className="relative w-full h-[400px] md:w-full"
+      className="relative w-full h-[400px] md:w-full overflow-hidden"
       onMouseEnter={() => setShowMagnifier(true)}
       onMouseLeave={() => setShowMagnifier(false)}
       onMouseMove={handleMouseMove}
@@ -34,12 +45,12 @@ const ImageMagnifier = ({ src, zoom = 2.5 }) => {
       <img
         src={src}
         alt="Zoomable"
-        className="w-full h-full object-cover object-center rounded shadow-lg"
+        className="w-full h-full object-contain rounded shadow-lg"
       />
 
       {showMagnifier && (
         <div
-          className="absolute border border-black z-[999] pointer-events-none rounded"
+          className="absolute border border-black z-[999] pointer-events-none rounded shadow-md bg-white"
           style={magnifierStyle}
         />
       )}

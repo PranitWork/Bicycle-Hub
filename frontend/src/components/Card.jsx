@@ -10,21 +10,20 @@ export const Card = ({ limit }) => {
       {displayedProducts.length ? (
         displayedProducts.map((p, index) => (
           <Link to={`/details/${p.id}`} key={index}>
-            <div className="text-left cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105">
-              <div className="relative">
-               
+            <div className="flex flex-col h-full justify-between cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 bg-white p-2 rounded-lg shadow">
+              <div className="relative w-full h-[200px]">
                 <img
-                  src={p.image}
+                  src={p.image[0]}
                   alt={p.title}
-                  className="w-full object-cover"
+                  className="w-full h-full object-contain rounded-md"
                 />
               </div>
-              <p className="mt-2 text-sm md:text-[20px] font-bold text-center">
-                {p.title}
-              </p>
-              <p className="text-xs md:text-[20px] font-semibold text-gray-600 text-center">
-                {p.price}
-              </p>
+              <div className="mt-4 flex-1 flex flex-col justify-between text-center">
+                <p className="text-sm md:text-[18px] font-bold">{p.title}</p>
+                <p className="text-xs md:text-[16px] font-semibold text-gray-600 mt-1">
+                  {p.price}
+                </p>
+              </div>
             </div>
           </Link>
         ))

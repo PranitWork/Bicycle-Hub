@@ -14,6 +14,7 @@ const Login = () => {
   const loginHandler = async (data) => {
     dispatch(asyncSigninUser(data));
     const success = await dispatch(asyncCurrentUser());
+
     if (success) {
       navigate("/");
     }
