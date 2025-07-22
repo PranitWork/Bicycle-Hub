@@ -2,10 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "src/index.js",
-  "scripts": {
-    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT",
-    "build": "echo 'No build step needed'"
-  },
+  
   "dependencies": {
     "json-server": "^0.17.0"
   }
