@@ -28,10 +28,10 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 p-6 bg-[#f5f8fc] min-h-screen">
+    <div className="flex flex-col lg:flex-row gap-8 p-4 sm:p-6 bg-[#f5f8fc] min-h-screen">
       {/* Left Side - Shopping Bag */}
-      <div className="flex-1 bg-white mt-20 rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-semibold mb-4">Shopping Bag</h2>
+      <div className="w-full lg:flex-1 bg-white mt-10 sm:mt-16 md:mt-20 rounded-lg shadow-md p-4 sm:p-6">
+        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Shopping Bag</h2>
 
         {cartItems.length === 0 ? (
           <div className="text-gray-600">
@@ -45,7 +45,7 @@ const Cart = () => {
             {cartItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md rounded-lg p-4 flex items-center gap-6"
+                className="bg-white shadow-md rounded-lg p-4 flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
               >
                 <img
                   src={
@@ -57,14 +57,14 @@ const Cart = () => {
                   className="w-24 h-24 object-cover rounded"
                 />
 
-                <div className="flex-1">
-                  <h2 className="text-xl font-semibold">{item.title}</h2>
+                <div className="flex-1 text-center sm:text-left">
+                  <h2 className="text-lg sm:text-xl font-semibold">{item.title}</h2>
                   <p className="text-gray-700">{item.price}</p>
                 </div>
 
                 <button
                   onClick={() => dispatch(removeFromCart(item.id))}
-                  className="mt-2 text-sm text-red-600 underline"
+                  className="text-sm text-red-600 underline mt-2 sm:mt-0"
                 >
                   Remove
                 </button>
@@ -75,9 +75,9 @@ const Cart = () => {
       </div>
 
       {/* Right Side - Summary */}
-      <div className="w-full mt-20 lg:w-[350px] space-y-6">
+      <div className="w-full lg:w-[350px] mt-10 sm:mt-16 md:mt-20 space-y-6">
         {/* Coupon Section */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
           <h3 className="font-semibold mb-4">Coupon Code</h3>
           <input
             type="text"
@@ -96,7 +96,7 @@ const Cart = () => {
         </div>
 
         {/* Total Summary */}
-        <div className="bg-orange-100 p-6 rounded-lg shadow-md">
+        <div className="bg-orange-100 p-4 sm:p-6 rounded-lg shadow-md">
           <h3 className="font-semibold mb-4">Cart Total</h3>
           <div className="flex justify-between text-sm mb-2">
             <p>Subtotal</p>

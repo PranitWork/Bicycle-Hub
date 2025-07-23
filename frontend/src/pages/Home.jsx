@@ -40,7 +40,7 @@ const Home = () => {
     sequence();
   }, []);
   return (
-    <main>
+    <main className="overflow-x-hidden">
 {/* navigation */}
 
 
@@ -58,9 +58,11 @@ const Home = () => {
         <p className="opacity-70 leading-snug">
           Now & Now+ <br /> Instant Cameras
         </p>
-        <button className="underline cursor-pointer hover:text-gray-300 transition text-xs">
+       
+          <Link  className="underline cursor-pointer hover:text-gray-300 transition text-xs" to="/products">
           Explore Bicycle →
-        </button>
+          </Link>
+       
       </motion.div>
 
       {/* Center Bike Image */}
@@ -91,9 +93,11 @@ const Home = () => {
           <p className="text-xs md:text-sm font-semibold leading-tight">
             SHESH - CLASSIC SERIES BLACK
           </p>
-          <button className="text-xs underline cursor-pointer hover:text-gray-300">
-            Shop Now
-          </button>
+          
+            <Link  className="text-xs underline cursor-pointer hover:text-gray-300" to="/products"> Shop Now
+            </Link>
+           
+          
         </div>
       </motion.div>
 
@@ -152,9 +156,12 @@ const Home = () => {
           Your comfort and cycling <br className="hidden md:block" />
           experience is our priority
         </p>
-        <button className="mt-1 underline cursor-pointer hover:text-gray-600 transition text-xs">
+        
+          <Link className="mt-1 underline cursor-pointer hover:text-gray-600 transition text-xs" to="/products">
+          
           Ergo Classic Series →
-        </button>
+          </Link>
+      
       </motion.div>
 
       {/* Bottom Right Tag */}
@@ -174,9 +181,12 @@ const Home = () => {
           <p className="text-xs md:text-sm font-semibold leading-tight">
             SHESH - ERGO CLASSIC WHITE
           </p>
-          <button className="text-xs cursor-pointer underline hover:text-gray-600">
+          
+            <Link  className="text-xs cursor-pointer underline hover:text-gray-600" to="/products">
+            
             Shop Now
-          </button>
+            </Link>
+        
         </div>
       </motion.div>
     </section>
@@ -224,10 +234,10 @@ const Home = () => {
       </div>
 
       <div className="mt-10">
-        <Link to="/products">
-          <button className="px-6 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">
+        <Link className="px-6 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition" to="/products">
+         
             View More Products
-          </button>
+         
         </Link>
       </div>
     </section>
@@ -313,9 +323,12 @@ const Home = () => {
               Experience cutting-edge engineering with aerodynamically optimized frames
             </p>
           </div>
-          <button className="mt-4 text-left cursor-pointer text-sm underline hover:text-gray-400">
+          
+            <Link className="mt-4 text-left cursor-pointer text-sm underline hover:text-gray-400" to="/products">
+            
             Explore Performance Bikes →
-          </button>
+            </Link>
+          
         </motion.div>
 
         {/* Card 2 */}
@@ -332,9 +345,12 @@ const Home = () => {
               Ergonomic designs and shock-absorbing technology
             </p>
           </div>
-          <button className="mt-4 text-left cursor-pointer text-sm underline hover:text-gray-400">
+       
+            <Link className="mt-4 text-left cursor-pointer text-sm underline hover:text-gray-400" to="/products">
+            
             Explore Bicycle →
-          </button>
+            </Link>
+         
         </motion.div>
 
         {/* Card 3 (with image) */}

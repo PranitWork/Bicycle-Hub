@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -33,19 +34,19 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="#" className="transition-colors">
+                <Link to="/products" className="transition-colors">
                   Bicycle
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="transition-colors">
+                <Link to="/about" className="transition-colors">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="transition-colors">
+                <Link to="/login" className="transition-colors">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
